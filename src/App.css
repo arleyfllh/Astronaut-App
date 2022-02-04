@@ -1,38 +1,348 @@
-.App {
-  text-align: center;
+body {
+    background: transparent linear-gradient(180deg, #15181C 0%, #004C5A 100%) 0% 0% no-repeat padding-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link {
+    color: white;
+    margin: 0 20px;
+    font-family: 'Chivo', sans-serif;
+    font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-content {
+    padding-top: 120px;
+    height: 700px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.newcomers-title, .mostviewed-title, .series-title {
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.newcomers-container {
+    padding-left: 0;
+    padding-right: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newcomers-card, .series-card {
+    width: 240px;
+    background-color: transparent;
+    color: white;
+}
+
+.newcomers-card-title, .series-card-title {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.newcomers-card-img-poster, .series-card-img-poster {
+    height: 354px;
+}
+
+.newcomers-card-rating, .series-card-rating {
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.img-star {
+    height: 22px;
+    margin-right: 10px;
+}
+
+.mostviewed-card {
+    background-color: transparent;
+    color: white;
+}
+
+.mostviewed-card-number {
+    font-family: 'Chivo', sans-serif;
+}
+
+.mostviewed-card-poster {
+    height: 148px;
+}
+
+.mostviewed-card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.mostviewed-card-rating {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.big-screen {
+    /* background-color: white; */
+    height: 620px;
+}
+
+.big-backdrop {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.big-movie-container {
+    background: rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 100%;
+    margin: 0;
+    border-radius: 20px;
+
+}
+
+.top-picks {
+    padding-top: 30px;
+    font-size: 24px;
+    font-family: 'Chivo', sans-serif;
+}
+
+.info-container {
+    margin-top: 200px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.info-container h1 {
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.big-button {
+    margin-right: 70px;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.big-button-view {
+    background-color: #2CBAD5;
+}
+
+.browse-title {
+    font-family: 'Chivo', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.browse-cat {
+    margin-top: 20px;
+}
+
+.box {
+    width: 238px;
+    height: 161px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.box-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-in img {
+    height: 66px;
+}
+
+.box-in p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+.footer-container {
+    border-top: 1px solid white;
+}
+
+.footer-foot {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+.newcomers-link, .mostviewed-link, .big-link {
+    text-decoration: none;
+}
+
+.login-container {
+    background: transparent url("img/bg-id.png") 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: 700px;
+}
+
+.login-logo {
+    height: 355px;
+}
+
+.hidden-pass-logo {
+    height: 15px;
+}
+
+.signin-button {
+    background-color: #2CBAD5;
+}
+
+.login-title, .login-desc, .signin, .signin-desc, .forgot-pass, .signin-button {
+    color: white;
+}
+
+.login-title, .signin {
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+}
+
+.login-desc, .signin-desc, .forgot-pass, .signin-button, .input-group {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.login-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.signin-desc {
+    font-size: 16px;
+}
+
+#basic-addon2 {
+    background-color: white;
+}
+
+.input-group {
+    width: 70%;
+}
+
+.forgot-pass {
+    width: 70%;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.signin-button {
+    border-radius: 20px;
+    padding: 5px 40px;
+}
+
+.detail-trailer {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+}
+
+.play-button {
+    background-color: black;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    opacity: 0.9;
+
+}
+
+.play {
+    margin: 0 auto;
+    top: 26%;
+    left: 3%;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 40px;
+    /* border-width: 2.5em 0 2.5em 5em; */
+    border-color: transparent transparent transparent white;
+}
+
+.trailer-title {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.detail-info {
+    color: white;
+    margin: 50px 100px;
+}
+
+.detail-title {
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+}
+
+.info-movie {
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0C9FBA;
+    margin-top: 50px;
+}
+
+.release-date, .info-cast, .info-dir, .info-syn, .detail-number-rating, .voters, .rating-button {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.info-cast, .info-dir {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.detail-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.detail-star {
+    height: 53px;
+    margin-right: 20px;
+}
+
+.detail-number-rating {
+    font-size: 46px;
+    margin: 0;
+}
+
+.rating-button {
+    background-color: #2CBAD5;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
 }
